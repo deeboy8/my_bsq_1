@@ -10,7 +10,7 @@ void destroy_map(const map_t* map) {
 // TODO: complete signature
 void print_map(const map_t* map, const bsq_t* bsq) {
   if (NULL != bsq) {
-    // printf("print_map::bsq.size: %d, bsq.row: %d, bsq.column: %d\n", (int)bsq->size, (int)bsq->rows, (int)bsq->columns);    
+    printf("print_map::bsq.size: %d, bsq.row: %d, bsq.column: %d\n", (int)bsq->size, (int)bsq->rows, (int)bsq->columns);    
   }
   // printf("print_map::bsq.size: %d, bsq.row: %d, bsq.column: %d\n", (int)bsq->size, (int)bsq->rows, (int)bsq->columns);  
   for (size_t row = 0; row < map->rows; row++) {
@@ -35,7 +35,7 @@ void print_map(const map_t* map, const bsq_t* bsq) {
     }   
     putchar('\n');
   }
-  // putchar('\n');
+  putchar('\n');
   // printf("my_bsq::bsq.size: %d, bsq.row: %d, bsq.column: %d\n", (int)bsq->size, (int)bsq->rows, (int)bsq->columns);
 
     destroy_map(map);
